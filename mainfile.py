@@ -134,7 +134,7 @@ def main(query_string):
     #End
 
     # Start from Page 1
-    for page in range(1, numPages + 1)[:2]:
+    for page in range(1, numPages + 1):
         newsapi.set_params(page=page, clear_others=False)
         api_news, status, total_results = newsapi.get_news()
 
