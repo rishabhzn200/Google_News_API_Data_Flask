@@ -1,0 +1,24 @@
+<html>
+    <head>
+		<title>News API</title>
+        <!--<link rel="stylesheet" href="./static/style.css" type='text/css'>-->
+		<link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+	</head>
+    <body>
+        <form action = "/result" method = "GET">
+
+            <div class="dropdown">
+                <label>Select Company</label>
+                <select name="companies" method="POST" action="/">
+                    {% for company in companies %}
+                        <option value="{{company}}" SELECTED>{{company}}</option>"
+                    {% endfor %}
+                </select>
+
+            </div>
+         <p><input type = "submit" value = "Get Data" class="form-control"/></p>
+      </form>
+
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" type="text/javascript"></script>
+   </body>
+</html>

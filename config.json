@@ -1,0 +1,21 @@
+{
+  "GOOGLE_SPREADSHEET": {
+    "SERVICE_ACCOUNT_FILE_PATH": "./drive/drive_service_account.json",
+    "WORKBOOK_ID": "1-bYQ52sAZcQJjl0gnQYNr8i_DnT9FE35Y-jRLmB-O4M"
+  },
+  "NEWS_API": {
+    "API_KEY": "fec8fb44856a468ba0a6d0691e40df99",
+    "URL": "https://newsapi.org/v2/everything",
+    "PAGE_SIZE": "4",
+    "NUM_DAYS": "30",
+    "HEADERS": {
+        "Connection": "keep-alive",
+        "Cache-Control": "max-age=0",
+        "Upgrade-Insecure-Requests": "1",
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+        "Accept-Encoding": "gzip, deflate, br",
+        "Accept-Language": "en-US,en;q=0.9"
+    }
+  }
+}
