@@ -39,8 +39,7 @@ def get_news(news_list):
     for news in news_list:
         title = news.get('title', None)
         author = news.get('author', None)
-        source = news.get('source', None)
-        if source is not None:
+        if (source := news.get('source', None)) is not None:
             source = source.get('name', None)
         url = news.get('url', None)
         published_date = news.get('publishedAt', None)
