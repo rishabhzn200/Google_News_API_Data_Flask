@@ -7,8 +7,8 @@
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
 
-import requests
 import ast
+from security import safe_requests
 
 class NewsAPI:
 
@@ -111,7 +111,7 @@ class NewsAPI:
         """
         # May be run a loop to fetch all the news or use generator
 
-        response = requests.get(self.url, headers=self.headers, params=self.params)
+        response = safe_requests.get(self.url, headers=self.headers, params=self.params)
 
         # If status code is not 200(OK), return the empty list for news, the status code and number of results as None
         if response.status_code != 200:
